@@ -69,13 +69,6 @@
                     </div>
                     @endif
                     <div class="form-group">
-                        <label for="incident-visibility">{{ trans('forms.incidents.visibility') }}</label>
-                        <select name="visible" id="incident-visibility" class="form-control">
-                            <option value="1" {{ $incident->visible === 1 ? 'selected' : null }}>{{ trans('forms.incidents.public') }}</option>
-                            <option value="0" {{ $incident->visible === 0 ? 'selected' : null }}>{{ trans('forms.incidents.logged_in_only') }}</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="incident-stick">{{ trans('forms.incidents.stick_status') }}</label>
                         <select name="stickied" id="incident-stick" class="form-control">
                             <option value="1" {{ $incident->stickied ? 'selected' : null }}>{{ trans('forms.incidents.stickied') }}</option>

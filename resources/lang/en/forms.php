@@ -56,9 +56,9 @@ return [
         'notify_subscribers' => 'Notify subscribers?',
         'notify_disabled'    => 'Due to scheduled maintenance, notifications about this incident or its components will be suppressed.',
         'visibility'         => 'Incident Visibility',
-        'stick_status'       => 'Stick Incident',
-        'stickied'           => 'Stickied',
-        'not_stickied'       => 'Not Stickied',
+        'stick_status'       => 'Pin Incident',
+        'stickied'           => 'Pinned',
+        'not_stickied'       => 'Not Pinned',
         'public'             => 'Viewable by public',
         'logged_in_only'     => 'Only visible to logged in users',
         'templates'          => [
@@ -230,8 +230,8 @@ return [
     ],
 
     'seo' => [
-        'title'        => 'SEO Title',
-        'description'  => 'SEO Description',
+        'title'        => 'Service Center Ticket ID',
+        'description'  => 'Description',
     ],
 
     // Buttons

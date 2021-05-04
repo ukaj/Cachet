@@ -62,13 +62,6 @@
                             </label>
                         </div>
                         <div class="form-group">
-                            <label for="incident-name">{{ trans('forms.incidents.visibility') }}</label>
-                            <select name="visible" class="form-control" v-model="visible">
-                                <option value="1" selected>{{ trans('forms.incidents.public') }}</option>
-                                <option value="0">{{ trans('forms.incidents.logged_in_only') }}</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <label for="incident-name">{{ trans('forms.incidents.stick_status') }}</label>
                             <select name="stickied" class="form-control" v-model="sticky">
                                 <option value="1">{{ trans('forms.incidents.stickied') }}</option>
@@ -132,10 +125,6 @@
                         <div class="form-group">
                             <label>{{ trans('forms.seo.title') }}</label> <small class="text-muted">{{ trans('forms.optional') }}</small>
                             <input type="text" name="seo[title]" class="form-control" placeholder="{{ trans('forms.optional') }}">
-                        </div>
-                        <div class="form-group">
-                            <label>{{ trans('forms.seo.description') }}</label> <small class="text-muted">{{ trans('forms.optional') }}</small>
-                            <input type="text" name="seo[description]" class="form-control" placeholder="{{ trans('forms.optional') }}">
                         </div>
                     </fieldset>
 

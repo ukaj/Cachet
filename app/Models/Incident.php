@@ -112,6 +112,7 @@ class Incident extends Model implements HasPresenter
         'name',
         'status',
         'visible',
+        'tags',
         'stickied',
         'notifications',
         'message',
@@ -131,6 +132,7 @@ class Incident extends Model implements HasPresenter
         'name'          => 'required|string',
         'status'        => 'required|int',
         'visible'       => 'required|bool',
+        'tags'          => 'nullable|string',
         'stickied'      => 'required|bool',
         'notifications' => 'nullable|bool',
         'message'       => 'required|string',
@@ -148,6 +150,7 @@ class Incident extends Model implements HasPresenter
         'name',
         'status',
         'visible',
+        'tags',
         'stickied',
     ];
 

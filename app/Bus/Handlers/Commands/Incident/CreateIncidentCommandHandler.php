@@ -78,6 +78,7 @@ class CreateIncidentCommandHandler
             'status'   => $command->status,
             'visible'  => $command->visible,
             'stickied' => $command->stickied,
+            'tags'     => $command->tags,
         ];
 
         if ($template = IncidentTemplate::where('slug', '=', $command->template)->first()) {
@@ -152,6 +153,7 @@ class CreateIncidentCommandHandler
                 'visible'          => $command->visible,
                 'notify'           => $command->notify,
                 'stickied'         => $command->stickied,
+                'tags'             => $command->tags,
                 'occurred_at'      => $command->occurred_at,
                 'component'        => Component::find($command->component_id) ?: null,
                 'component_status' => $command->component_status,

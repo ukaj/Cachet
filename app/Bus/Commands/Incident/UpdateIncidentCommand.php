@@ -62,6 +62,13 @@ final class UpdateIncidentCommand
      *
      * @var int
      */
+    public $tags;
+
+    /**
+     * The incident component.
+     *
+     * @var string|null
+     */
     public $component_id;
 
     /**

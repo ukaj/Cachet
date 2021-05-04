@@ -8,6 +8,7 @@ module.exports = {
             visible: 1,
             sticky: 0,
             message: '',
+            tags: '',
             when: null,
             notify: false,
             component: {

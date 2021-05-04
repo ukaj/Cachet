@@ -52,6 +52,13 @@ final class CreateIncidentCommand
      *
      * @var int
      */
+    public $tags;
+
+    /**
+     * The incident component.
+     *
+     * @var string|null
+     */
     public $component_id;
 
     /**
@@ -113,6 +120,7 @@ final class CreateIncidentCommand
         'status'           => 'required|int|min:0|max:4',
         'message'          => 'nullable|string',
         'visible'          => 'nullable|bool',
+        'tags'             => 'nullable|string',
         'component_id'     => 'nullable|required_with:component_status|int',
         'component_status' => 'nullable|required_with:component_id|int|min:0|max:4',
         'notify'           => 'nullable|bool',
@@ -140,12 +148,13 @@ final class CreateIncidentCommand
      *
      * @return void
      */
-    public function __construct($name, $status, $message, $visible, $component_id, $component_status, $notify, $stickied, $occurred_at, $template, array $template_vars = [], array $meta = [])
+    public function __construct($name, $status, $message, $visible, $component_id, $component_status, $notify, $stickied, $tags, $occurred_at, $template, array $template_vars = [], array $meta = [])
     {
         $this->name = $name;
         $this->status = $status;
         $this->message = $message;
         $this->visible = $visible;
+        $this->tags = $tags;
         $this->component_id = $component_id;
         $this->component_status = $component_status;
         $this->notify = $notify;

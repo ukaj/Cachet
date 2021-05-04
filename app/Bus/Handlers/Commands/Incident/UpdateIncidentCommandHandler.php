@@ -130,6 +130,7 @@ class UpdateIncidentCommandHandler
             'message'          => $command->message,
             'visible'          => $command->visible,
             'stickied'         => $command->stickied,
+            'tags'             => $command->tags,
             'component_id'     => $command->component_id,
             'component_status' => $command->component_status,
             'notify'           => $command->notify,

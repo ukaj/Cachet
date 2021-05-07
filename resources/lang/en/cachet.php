@@ -37,10 +37,10 @@ return [
         'posted'       => 'Posted :timestamp by :username',
         'posted_at'    => 'Posted at :timestamp',
         'status'       => [
-            1 => 'Investigating TODO',
-            2 => 'Identified TODO',
-            3 => 'Watching TODO',
-            4 => 'Fixed TODO',
+            1 => 'Investigating',
+            2 => 'Identified',
+            3 => 'Watching',
+            4 => 'Fixed',
         ],
     ],
 
